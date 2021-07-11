@@ -102,7 +102,7 @@ public class pheptinh {
             char c = expression.charAt(i);
             
             // Nếu gặp ký tự không phải toán hạng và number không rỗng
-            if (!letterOrDigit(c) && number != "") {
+            if (!letterOrDigit(c) && !number.equals("")) {
             	listOutput.add(Float.parseFloat(number)); // Chèn number vào listOutput
             	number = ""; // xóa giá trị của number - do đã chèn vào listOutput rồi
             }
